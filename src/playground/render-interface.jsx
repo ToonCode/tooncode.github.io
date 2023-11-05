@@ -71,7 +71,7 @@ const handleClickAddonSettings = () => {
 
 const messages = defineMessages({
     defaultTitle: {
-        defaultMessage: 'A mod of PenguinMod',
+        defaultMessage: 'A mod of Snail IDE meant for games.',
         description: 'Title of homepage',
         id: 'tw.guiDefaultTitle'
     }
@@ -116,20 +116,12 @@ const Footer = () => (
             <div className={styles.footerText}>
                 <FormattedMessage
                     // eslint-disable-next-line max-len
-                    defaultMessage="PenguinMod, Snail IDE, and TurboWarp are not affiliated with Scratch, the Scratch Team, or the Scratch Foundation."
+                    defaultMessage="ToonCode, PenguinMod, Snail IDE, and TurboWarp are not affiliated with Scratch, the Scratch Team, or the Scratch Foundation."
                     description="Disclaimer that PenguinMod, Snail IDE, and TurboWarp are not connected to Scratch"
                     id="tw.footer.disclaimer"
                 />
             </div>
             <div className={styles.footerColumns}>
-                <div className={styles.footerSection}>
-                    <a href="credits.html">
-                        <FormattedMessage
-                            defaultMessage="Credits"
-                            description="Credits link in footer"
-                            id="tw.footer.credits"
-                        />
-                    </a>
                     <a href="https://github.com/sponsors/GarboMuffin">
                         <FormattedMessage
                             defaultMessage="Donate to TurboWarp Developer"
@@ -177,46 +169,18 @@ const Footer = () => (
                     </a>
                 </div>
                 <div className={styles.footerSection}>
-                    <a href="https://scratch.mit.edu/users/Mr_rudy/">
+                    <a href="https://scratch.mit.edu/users/B0yfr1end/">
                         <FormattedMessage
-                            defaultMessage="Feedback & Bugs"
-                            description="Link to feedback/bugs page"
+                            defaultMessage="My Scratch profile"
+                            description="My Scratch profile"
                             id="tw.feedback"
                         />
                     </a>
-                    <a href="https://github.com/Snail-IDE/">
+                    <a href="https://github.com/ToonCode/">
                         <FormattedMessage
-                            defaultMessage="Source Code"
+                            defaultMessage="GitHub"
                             description="Link to source code"
                             id="tw.code"
-                        />
-                    </a>
-                    <a href="privacy.html">
-                        <FormattedMessage
-                            defaultMessage="Privacy Policy"
-                            description="Link to privacy policy"
-                            id="tw.privacy"
-                        />
-                    </a>
-                    <a href="https://snail-ide.github.io/examples/">
-                        <FormattedMessage
-                            defaultMessage="Example Projects"
-                            description="Link to example projects"
-                            id="tw.examples"
-                        />
-                    </a>
-                    <a href="https://scratch.mit.edu/studios/33532977/">
-                        <FormattedMessage
-                            defaultMessage="Scratch Studio"
-                            description="Link to scratch studio"
-                            id="tw.snail-studio"
-                        />
-                    </a>
-                    <a href="https://snail-ide-beta.mobirisesite.com/">
-                        <FormattedMessage
-                            defaultMessage="Homepage Beta"
-                            description="Link to homepage beta"
-                            id="tw.beta"
                         />
                     </a>
                 </div>
@@ -298,7 +262,7 @@ class Interface extends React.Component {
                             {/* project not approved message */}
                             {(window.LastFetchedProject) != null && (window.LastFetchedProject.accepted == false) ? (
                                 <div className={styles.remixWarningBox}>
-                                    <p>This project is not approved. Be careful when running this project.</p>
+                                    <p>This project could be malicious. You shouldn't run this.</p>
                                 </div>
                             ) : null}
                             {/* project too large to remix message */}
@@ -365,16 +329,12 @@ class Interface extends React.Component {
                                 <p>
                                     <FormattedMessage
                                         // eslint-disable-next-line max-len
-                                        defaultMessage="Snail IDE is a mod of Penguinmod to add new blocks and features either in extensions or in Snail IDE's main toolbox. PenguinMod is a Scratch mod that compiles projects to JavaScript to make them run really fast. Try it out by choosing an uploaded project below or making your own in the editor."
-                                        description="Description of PenguinMod and TurboWarp"
+                                        defaultMessage="ToonCode is a visual programming language for creating games. It is based off of Snail IDE, which is a fork of PenguinMod."
+                                        description="Description"
                                         id="tw.home.description"
                                     />
                                 </p>
                             </div>
-                            <div className={styles.section}>
-                                <FeaturedProjects />
-                            </div>
-                            <a target="_blank" href="https://penguinmod.site/search?q=all:projects">View projects in new tab</a>
                         </React.Fragment>
                     ) : null}
                 </div>
