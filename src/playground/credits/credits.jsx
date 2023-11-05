@@ -58,14 +58,14 @@ const Credits = () => (
             </h1>
         </header>
         <section>
-            <h1>Snail IDE</h1>
+            <h1>ToonCode</h1>
         </section>
         <section>
             <h2>Thank you</h2>
             <p>
-                Without TurboWarp and PenguinMod, Snail IDE may have never existed.
-                Thank you to everyone who worked on Scratch, TurboWarp, and PenguinMod
-                you have made many people finally be able to make whatever they can imagine.
+                Without TurboWarp, PenguinMod and Snail IDE, ToonCode may have never existed.
+                Thank you to everyone who worked on Scratch, TurboWarp, Snail IDE and PenguinMod.
+                You have made many people finally be able to make whatever they can imagine.
             </p>
             <a href="https://scratch.mit.edu/donate">
                 Donate to support Scratch.
@@ -74,17 +74,20 @@ const Credits = () => (
             <a href="https://github.com/sponsors/GarboMuffin">
                 Donate to support TurboWarp.
             </a>
+            <br></br><br></br>
+            <a href="https://penguinmod.com/donate">
+                Donate to support PenguinMod.
+            </a>
             <h2>Contributors</h2>
             <p>
-                Snail IDE is made by a small bunch of developers.
-                A list is below, but you can also check <a href="https://github.com/orgs/Snail-IDE/people">our GitHub</a> incase this one is out of date.
+                There are no contributors as this is a indie project.
             </p>
             <UserList users={UserData.pmDevelopers} />
             <p><i>The list order is randomized on each refresh.</i></p>
         </section>
         <section>
             <h2>GitHub Pages</h2>
-            <p>We currently use <a href="https://pages.github.com/">GitHub Pages</a> to host PenguinMod.</p>
+            <p>We currently use <a href="https://pages.github.com/">GitHub Pages</a> to host ToonCode.</p>
             <a href="https://pages.github.com/">
                 <img
                     src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/collections/github-pages-examples/github-pages-examples.png"
@@ -94,13 +97,12 @@ const Credits = () => (
             </a>
             <h2>Domain Provider</h2>
             <p>
-                <a href="https://penguinmod.site">penguinmod.site</a> (and any subdomains) are currently provided by NotHouse.
-                Currently no link to any known profile of theirs is publicly known.
+                Self-explanitory. Read above.
             </p>
             <h2>Sound Effects</h2>
             <p>
-                PenguinMod has added some more sounds to the Sound Library.
-                All PenguinMod sounds are
+                toonCode has added some more sounds to the Sound Library.
+                All sounds are
                 from <a href="https://freesound.org/">https://freesound.org/</a> and <a href="https://archive.org/">https://archive.org/</a> under
                 the Public Domain license.
             </p>
